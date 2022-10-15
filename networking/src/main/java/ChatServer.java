@@ -19,7 +19,7 @@ public class ChatServer {
                 }
             }
             serv.close();
-            System.exit(0);
+
         } catch (IOException e) {
             System.out.println("Ошибка инициализации сервера");
         } finally {
@@ -29,6 +29,7 @@ public class ChatServer {
                 e.printStackTrace();
             }
         }
+       System.exit(0);
 
     }
 

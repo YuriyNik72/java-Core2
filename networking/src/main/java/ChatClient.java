@@ -15,10 +15,12 @@ public class ChatClient {
                     break;
                 }
             }
-            System.exit(0);
+            sock.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.exit(0);
     }
 
     public static void main(String[] args) {
