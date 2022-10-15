@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet com/nikitin/styles/style.css ?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.nikitin.Controller">
+
+    <stylesheets><URL value="@ styles/style.css" /></stylesheets>
+   <children>
+      <MenuBar prefHeight="52.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                <MenuItem fx:id="Open" mnemonicParsing="false" onAction="#Open" text="Вход" />
+                <MenuItem fx:id="Close" mnemonicParsing="false" onAction="#Close" text="Выход" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="textArea" prefHeight="674.0" prefWidth="600.0" />
+      <HBox prefHeight="362.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="textField" onAction="#sendMsg" prefHeight="25.0" prefWidth="490.0" />
+            <Button fx:id="sendBtn" mnemonicParsing="false" onAction="#sendMsg" prefHeight="28.0" prefWidth="114.0" text="Отправить">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
