@@ -15,6 +15,7 @@
         <module>graphics</module>
         <module>multithreading</module>
         <module>networking</module>
+        <module>network-chat</module>
     </modules>
 
     <properties>
