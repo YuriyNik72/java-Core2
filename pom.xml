@@ -16,6 +16,7 @@
         <module>multithreading</module>
         <module>networking</module>
         <module>network-chat</module>
+        <module>chat-with-blacklist</module>
     </modules>
 
     <properties>

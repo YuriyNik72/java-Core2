@@ -20,6 +20,10 @@ public class ChatClient {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        /*
+        TODO
+        Рассмотреть цель использования System.exit
+         */
         System.exit(0);
     }
 
