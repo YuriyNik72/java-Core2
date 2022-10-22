@@ -4,6 +4,9 @@ import java.net.Socket;
 
 public class ChatServer {
 
+    public static void main(String[] args) {
+        new ChatServer();
+    }
     public ChatServer(){
         ServerSocket serv = null;
         Socket sock;
@@ -20,24 +23,16 @@ public class ChatServer {
             }
             serv.close();
 
-        } catch (IOException e) {
+       } catch (IOException e) {
             System.out.println("Ошибка инициализации сервера");
-        } finally {
+            } finally {
             try {
                 serv.close();
-            } catch (IOException e) {
+                } catch (IOException e) {
                 e.printStackTrace();
+                }
             }
-        }
-/*
-TODO
-Рассмотреть цель использования System.exit
- */
-       System.exit(0);
 
     }
 
-    public static void main(String[] args) {
-        new ChatServer();
-    }
 }

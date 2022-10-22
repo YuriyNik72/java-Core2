@@ -6,6 +6,9 @@ public class ChatClient {
     private final String SERVER_ADDR = "localhost";
     private final int SERVER_PORT = 8100;
 
+    public static void main(String[] args) {
+        new ChatClient();
+    }
     public ChatClient() {
         try {
             Socket sock = new Socket(SERVER_ADDR, SERVER_PORT);
@@ -20,14 +23,7 @@ public class ChatClient {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        /*
-        TODO
-        Рассмотреть цель использования System.exit
-         */
-        System.exit(0);
+
     }
 
-    public static void main(String[] args) {
-        new ChatClient();
-    }
 }
